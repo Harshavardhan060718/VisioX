@@ -4,7 +4,7 @@ import time
 
 model = YOLO("yolov8n.pt")
 
-cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)  # your iVCam index
+cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)  # your iVCam index
 
 if not cap.isOpened():
     print("Camera not detected")
